@@ -69,7 +69,7 @@ npm start
 
 
 
-#🌍 Deployment
+## 🌍 Deployment
 This project is deployed using Netlify.
 
 Netlify Build Settings:
@@ -85,16 +85,16 @@ Connect your GitHub repo
 
 Configure build settings and deploy
 
-#🤝 Contributions
+## 🤝 Contributions
 Pull requests and contributions are welcome!
 Feel free to fork this repo and improve it.
 
 If you'd like to add new features (like expense history, multiple users, etc.), go ahead and open an issue to discuss!
 
-#📃 License
+## 📃 License
 This project is licensed under the MIT License.
 
-#🙌 Author
+## 🙌 Author
 Developed with 💖 by Koushik Madaboni
 
 
