@@ -1,0 +1,287 @@
+/* ==============================
+     Premium ShareIt Styling ✨
+   ============================== */
+
+:root {
+  --color-primary: #ffb347;
+  --color-secondary: #ffcc33;
+  --color-success: #2ecc71;
+  --color-danger: #e74c3c;
+  --color-white: #ffffff;
+  --color-black: #2d2d2d;
+
+  --bg-gradient: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);;
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  color: var(--color-white);
+}
+
+/* Heading */
+.heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.Select{
+  color: black;
+}
+/* Layout */
+.app {
+  display: grid;
+  grid-template-columns: 34rem 44rem;
+  gap: 4rem;
+  width: 100%;
+  max-width: 90rem;
+}
+
+/* Card Containers */
+.sidebar,
+form {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  padding: 2.4rem;
+  transition: all 0.4s ease;
+}
+
+/* ===================
+      Components
+=================== */
+
+/* Buttons */
+.button {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  color: var(--color-black);
+  padding: 0.9rem 1.4rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  margin-top: 19px;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* ===================
+      Friend List
+=================== */
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.sidebar li img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-white);
+  flex-shrink: 0;
+}
+
+.friend-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.friend-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--color-white);
+}
+
+.friend-info p {
+  font-size: 1.3rem;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.sidebar li .button {
+  flex-shrink: 0;
+  padding: 0.6rem 1.2rem;
+}
+
+/* Optional: balance classes */
+.green {
+  color: var(--color-success);
+}
+.red {
+  color: var(--color-danger);
+}
+.neutral {
+  color: #ccc;
+}
+
+
+/* Status Dot */
+.sidebar li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-success);
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 35px;
+}
+.sidebar li.red::after {
+  background-color: var(--color-danger);
+}
+
+/* ===================
+     Forms
+=================== */
+
+.form-add-friend,
+.form-split-bill {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.form-add-friend {
+  grid-template-columns: 1fr 1.5fr;
+  margin-bottom: 2rem;
+}
+
+.form-split-bill {
+  grid-template-columns: 1fr 12rem;
+}
+
+form h2 {
+  grid-column: 1 / -1;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.6rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
+}
+
+/* Inputs */
+input,
+select {
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  text-align: center;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder,
+select option {
+  color: rgba(255, 255, 255, 0.7);
+}
+.AddFriend{
+    font-family: inherit;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  text-align: center;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  width: 154px;
+}
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 179, 71, 0.4);
+  border-color: var(--color-secondary);
+}
+
+/* ===================
+     Toast Notification
+=================== */
+
+.toast {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 1.2rem 2rem;
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%   { opacity: 0; transform: translateY(-10px); }
+  10%  { opacity: 1; transform: translateY(0); }
+  90%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ===================
+     Responsive
+=================== */
+@media (max-width: 768px) {
+  .app {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  .heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
