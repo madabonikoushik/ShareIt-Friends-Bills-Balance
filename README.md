@@ -10,7 +10,7 @@
 
 ShareIt is a minimal and user-friendly bill splitting app for friends. Add your friends, input expenses, and the app will automatically calculate who owes what to whom.
 
-![App Screenshot](https://user-images.githubusercontent.com/your-screenshot-placeholder.png)
+![App Screenshot](<img width="1905" height="893" alt="Image" src="https://github.com/user-attachments/assets/f86952c3-2c8f-4c17-ba46-ec40d2d4f391" />)
 
 ---
 
