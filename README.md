@@ -59,10 +59,42 @@ ShareIt-Friends-Bills-Balance/
 
 ### 1. Clone the repository
 
-```bash
+bash
 git clone https://github.com/madabonikoushik/ShareIt-Friends-Bills-Balance.git
 cd ShareIt-Friends-Bills-Balance
-2. Install dependencies
+###2. Install dependencies
 npm install
-3. Run the application
+###3. Run the application
 npm start
+
+
+
+#🌍 Deployment
+This project is deployed using Netlify.
+
+Netlify Build Settings:
+Build Command: npm run build
+
+Publish Directory: build
+
+To deploy your own version:
+
+Create a Netlify account
+
+Connect your GitHub repo
+
+Configure build settings and deploy
+
+#🤝 Contributions
+Pull requests and contributions are welcome!
+Feel free to fork this repo and improve it.
+
+If you'd like to add new features (like expense history, multiple users, etc.), go ahead and open an issue to discuss!
+
+#📃 License
+This project is licensed under the MIT License.
+
+#🙌 Author
+Developed with 💖 by Koushik Madaboni
+
+
